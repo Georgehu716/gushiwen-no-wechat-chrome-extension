@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "gushiwen no wechat",
+  "description": "This extension disable the wechat ad in gushiwen website",
+  "version": "0.1",
+  "icons": {
+    "16": "icons/poem16.png",
+    "32": "icons/poem32.png",
+    "48": "icons/poem48.png",
+    "128": "icons/poem128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*.gushiwen.cn/*",
+    "https://*.gushiwen.cn/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
